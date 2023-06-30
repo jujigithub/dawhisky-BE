@@ -1,4 +1,3 @@
-# **작성중입니다**
 # **DA WHISKY - BackEnd**
 
 <p align="center"><img src="https://github.com/dawhisky/dawhisky-FE/assets/84097192/89e7f164-798e-43ec-8442-7fba16c5fe9d" alt="다위스키 리드미 메인"></p>
@@ -71,8 +70,6 @@
 
 ## **🥃 서비스 아키텍처**
 
----
-
 <p align="center"><img src="https://github.com/dawhisky/dawhisky-FE/assets/84097192/9435d863-f6af-49f5-9219-0d28519e6487" alt="다위스키 아키텍처"></p>
 
 <br /> <br />
@@ -81,25 +78,15 @@
 
 <table>
   <tr align="center">
-    <td><strong>무한 스크롤</strong></td>
+    <td><strong>CI/CD</strong></td>
     <td><strong>실시간 줄서기</strong></td>
     <td><strong>줄서기 응답 알림</strong></td>
-  </tr>
-   <tr align="center">
-    <td><img src="" alt="" /></td>
-    <td><img src="" alt="" /></td>
-    <td><img src="" alt="" /></td>
-  </tr>
+  </tr>  
   <tr align="center">
-    <td><strong>PWA 배포</strong></td>
+    <td><strong>HTTPS</strong></td>
     <td><strong>검색어 자동완성</strong></td>
-    <td><strong>지도 위치 감지</strong></td>
-  </tr>
-   <tr align="center">
-    <td><img src="" alt="" /></td>
-    <td><img src="" alt="" /></td>
-    <td><img src="" alt="" /></td>
-  </tr>
+    <td><strong>소셜 로그인</strong></td>
+  </tr>   
 </table>
 
 <br /> <br />
@@ -108,15 +95,16 @@
 
 <table>
   <tr>
-    <td><strong>Styled Component</strong></td>
-    <td>테일윈드와 스타일드 컴포넌트를 고민하던 중, 디자이너님과의 원만한 협업과 초기 러닝커브를 고려하여 익숙한 라이브러리를 선택하는 것이 좋다는 판단하에 선정</td>
+    <td><strong>HTTPS</strong></td>
+    <td> - SSL/TSL 발급을 통하여 도메인에 대한 보안성과 검색 노출 빈도를 증가
+- FE에서 vercel사용을 위하여 구축</td>
   </tr>
   <tr>
-    <td><strong>React router dom</strong></td>
-    <td>UI를 url에 따라 분기 처리하여 렌더링하기 위해서 선정</td>
+    <td><strong>MySQL</strong></td>
+    <td> 대부분 정형화된 데이터여서 SQL로 선정 MySQL로 프로젝트의 모든 기능이 가능하다 판단하여 팀원 모두 숙련도가 높은 DB로 선정</td>
   </tr>
   <tr>
-    <td><strong>React query</strong></td>
+    <td><strong>Redis</strong></td>
     <td>리액트 쿼리 사용 시 캐싱 처리를 이용하거나 데이터 변경 시 get api를 자동 실행하는 등 최적화와 효율적인 코드 작성을 위해 선정</td>
   </tr>
   <tr>
@@ -153,17 +141,17 @@
 
 ## **🥃 트러블슈팅**
 
-### [👉 Route 인증/인가 오류]()
+### [👉 Route 인증/인가 오류](https://team-spirits.oopy.io/3139f4ce-0250-4e79-944f-a67b6a77d100)
 
-### [👉 위스키바 데이터 지도 출력 이슈]()
+### [👉 위스키바 데이터 지도 출력 이슈](https://team-spirits.oopy.io/ff252d22-6764-42fc-b8fb-791b91fe9b81)
 
-### [👉 PWA]()
+### [👉 PWA](https://team-spirits.oopy.io/361040d7-ff40-46bb-863f-36982cdff269)
 
 <br /> <br />
 
 ## **🥃 유저 테스트 피드백**
 
-### [👉 유저 테스트 결과 및 피드백 반영]()
+### [👉 유저 테스트 결과 및 피드백 반영](https://team-spirits.oopy.io/39a7d835-3887-4355-bf45-b391fa959a09)
 
 <br /> <br />
 
