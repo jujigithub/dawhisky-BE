@@ -254,7 +254,7 @@
       - 위스키 및 점주 DB 스크랩핑 작업
     </td>
     <td align="center"><a target="_blank" rel="noopener noreferrer nofollow" href="https://github.com/junkyo974">@junkyo974</a></td>
-    <td align="center">@junkyo974</td>
+    <td align="center">@junkyo814@naver.com</td>
   </tr>
 </table>
 
