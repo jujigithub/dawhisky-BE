@@ -1,4 +1,3 @@
-# **작성중입니다**
 # **DA WHISKY - BackEnd**
 
 <p align="center"><img src="https://github.com/dawhisky/dawhisky-FE/assets/84097192/89e7f164-798e-43ec-8442-7fba16c5fe9d" alt="다위스키 리드미 메인"></p>
@@ -151,19 +150,16 @@
 
 ## **🥃 트러블슈팅**
 
-### [👉 Route 인증/인가 오류](https://team-spirits.oopy.io/3139f4ce-0250-4e79-944f-a67b6a77d100)
+### [👉 DB 감지 체계](https://team-spirits.oopy.io/88fac133-5ac4-4c08-aecc-429362ff46f8)
 
-### [👉 위스키바 데이터 지도 출력 이슈](https://team-spirits.oopy.io/ff252d22-6764-42fc-b8fb-791b91fe9b81)
+### [👉 카카오 싱크](https://team-spirits.oopy.io/413c112e-e41f-4f4c-a2ea-10cfd8475517)
 
-### [👉 PWA](https://team-spirits.oopy.io/361040d7-ff40-46bb-863f-36982cdff269)
+### [👉 카카오 로그인](https://team-spirits.oopy.io/f4044701-6189-408d-8e80-69c9739e218b)
 
-<br /> <br />
-
-## **🥃 유저 테스트 피드백**
-
-### [👉 유저 테스트 결과 및 피드백 반영](https://team-spirits.oopy.io/39a7d835-3887-4355-bf45-b391fa959a09)
+### [👉 EC2 instance](https://team-spirits.oopy.io/8f779818-7a6c-4a11-889f-ecda63cc4b63)
 
 <br /> <br />
+
 
 ## **🥃 팀원 소개**
 
