@@ -1,3 +1,4 @@
+# **작성중입니다**
 # **DA WHISKY - BackEnd**
 
 <p align="center"><img src="https://github.com/dawhisky/dawhisky-FE/assets/84097192/89e7f164-798e-43ec-8442-7fba16c5fe9d" alt="다위스키 리드미 메인"></p>
@@ -96,44 +97,53 @@
 <table>
   <tr>
     <td><strong>HTTPS</strong></td>
-    <td> - SSL/TSL 발급을 통하여 도메인에 대한 보안성과 검색 노출 빈도를 증가
+    <td> - SSL/TSL 발급을 통하여 도메인에 대한 보안성과 검색 노출 빈도를 증가<br />
 - FE에서 vercel사용을 위하여 구축</td>
   </tr>
   <tr>
     <td><strong>MySQL</strong></td>
-    <td> 대부분 정형화된 데이터여서 SQL로 선정 MySQL로 프로젝트의 모든 기능이 가능하다 판단하여 팀원 모두 숙련도가 높은 DB로 선정</td>
+    <td> - 대부분 정형화된 데이터여서 SQL로 선정<br />
+- MySQL로 프로젝트의 모든 기능이 가능하다 판단하여 팀원 모두 숙련도가 높은 DB로 선정</td>
   </tr>
   <tr>
     <td><strong>Redis</strong></td>
-    <td>리액트 쿼리 사용 시 캐싱 처리를 이용하거나 데이터 변경 시 get api를 자동 실행하는 등 최적화와 효율적인 코드 작성을 위해 선정</td>
+    <td>- 이메일 인증코드, Refresh Token, Device Token의 만료시간 관리의 편의성<br />
+- Device Token의 경우 Update가 많지 않을거라 판단하여 Global Cache를 통해 성능향상을 위해 선정</td>
   </tr>
   <tr>
-    <td><strong>Axios</strong></td>
-    <td>비동기 통신처리 수단 중 fetch같은 JS 내장함수에 비해 에러상황 등에 대한 처리가 유연하여 선정</td>
+    <td><strong>S3</strong></td>
+    <td>CI/CD 파이프라인 구축과 사진 업로드를 위해 선정</td>
   </tr>
   <tr>
-    <td><strong>React kakao maps sdk</strong></td>
-    <td>기존의 html + js로 구성되어있는 kakao maps 레퍼런스를 리액트와 jsx에 맞게 함수형 컴포넌트 코드로 작성하기 위해 선정</td>
+    <td><strong>CI/CD Tool</strong></td>
+    <td>- 레퍼런스 접근성, 비용, 러닝 커브 기준으로 선정<br />
+- 최종 후보로 깃허브 액션(CI) + AWS 코드 디플로이(CD) vs 젠킨스(CI/CD 통합) 중 고민<br />
+- CD환경 구성 시 jenkins의 경우 2개의 EC2인스턴스가 필요하고 세팅 기간이 오래 걸릴 것으로 판단되어 빠른 개발을 위해 github actions + Codedeploy로 선정</td>
   </tr>
   <tr>
-    <td><strong>Firebase</strong></td>
-    <td>주류 관련 사이트 사유로 ‘카카오톡 메시지’ 보내기를 포함한 카카오 API의 상당부분을 반려받아 구현 중이던 ‘줄 서기’ 기능에서 점주가 대기중이던 고객에게 알림을 보내기 위한 수단으로써 차선책으로 FCM을 채택</td>
+    <td><strong>Puppeteer</strong></td>
+    <td>동적 이미지 크롤링을 위해 사용</td>
   </tr>
   <tr>
     <td><strong>Socket.io</strong></td>
     <td>줄서기 기능의 실시간 자리현황 반영을 위해 소켓 방식을 채택하였고, FE와 BE 언어가 동일하여 관련 npm 중 완성도가 가장 높은 라이브러리인 socket.io 선정</td>
   </tr>
   <tr>
-    <td><strong>Recoil</strong></td>
-    <td>- 데이터의 양방향 핸들링을 위해 상태관리 툴을 도입<br />- 리덕스나 리덕스 툴킷보다 보일러플레이트가 적고, 상대적으로 더 기존 리액트 코드와 유사해(useState ↔ useRecoilState) 러닝 커브가 적을 것으로 예상되어 선정</td>
+    <td><strong>Sentry</strong></td>
+    <td>- 오류 추적과 서비스 모니터링을 위하여 선정<br />
+- 센트리에 에러의 종류, 발생 위치, 발생 시간이 기록되므로 기존에 화면공유/라이브쉐어/캡쳐를 통한 에러 공유보다 편의성이 개선됨<br />
+- 또한, 트레이싱을 통해 어떤 요청이 언제, 얼마나, 어떤 성능으로 들어오는지 모니터링하여 서비스 개선에 필요한 데이터 획득 가능해짐</td>
   </tr>
   <tr>
-    <td><strong>React-intersection-observer</strong></td>
-    <td>- 무한스크롤 적용을 위해 도입<br />- 직접 dom의 scroll 위치값을 계산하는 것보다 observer가 제공하는 ref와 inView를 이용해 위치값을 계산하는 것이 상대적으로 렌더링이 적어 해당 라이브러리 선정</td>
+    <td><strong>Swagger</strong></td>
+    <td>- api리스트와 각 api에 대한 req, res값을 가시성 좋게 표현해서 협업 효율 향상을 위해 선정<br />
+- 이미 api명세서가 작성되어있지만, api명세서에 비해 접근성, 가독성이 좋음<br />
+- 스웨거 페이지에서 직접 api호출이 가능하여 api test가 편리해짐</td>
   </tr>
   <tr>
-    <td><strong>React-toastify</strong></td>
-    <td>‘확인’ 버튼을 눌러야 하는 브라우저 기본 알림보다 원하는 시간 만큼 알림창을 화면에 띄울 수 있고, 디자인을 커스텀할 수 있어 선정</td>
+    <td><strong>Jest</strong></td>
+    <td>- test code 작성을 위해 선정<br />
+- mocha는 세팅이 자유로운 대신 러닝 커브가 높으며, 추가적인 라이브러리들이 많이 필요하여 개발속도와 편의성을 위하여 jest로 선정</td>
   </tr>
 </table>
 
